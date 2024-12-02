@@ -1,8 +1,9 @@
 # CNN Training to detect sign language patterns 
 
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+## About the project
+This project was developed as the final project for an ML professional certificate, where we could practice important things we had learned from the program. The project consists of training a convolutional neural network to categorize images into different options from sign language gestures. It was trained testing two different CNN model architectures and then a Hyperparameter tuning process was performed to get the best parameters for the model. During this Hyperparameter tunning process, a Bayesian optimization process was applied and run for 100 iterations to get the result after testing different combinations for the Hyperparameters. Finally, The model was trained with those parameters, reaching a 92% accuracy on the test set, meaning that the model accurately categorized 92% of the pictures from the test set.
+
 
 ## DATA
 A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
