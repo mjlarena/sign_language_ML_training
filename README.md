@@ -6,6 +6,12 @@ This project was developed as the final project for an ML professional certifica
 
 
 ## DATA
+The data was obtained from a dataset available at Kaggle:
+https://www.kaggle.com/datasets/datamunge/sign-language-mnist
+
+
+
+The dataset consists of 
 A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
 
 ## MODEL 
