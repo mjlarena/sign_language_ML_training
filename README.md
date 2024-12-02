@@ -11,11 +11,9 @@ https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 
 ![Screenshot](amer_sign2.png)
 
-The dataset consists of 27,455 cases in the training data and 7,172 cases in the test data. 
+The Sign Language MNIST dataset is a collection of 28x28 grayscale images representing hand gestures for 24 letters of the American Sign Language (ASL) alphabet. The samples exclude the letters "J" and "Z," since they have movements. The dataset is divided into 27,455 images in the training set and 7,172 images for the testing set. Each image has its own label corresponding to the letters from the ASL gesture.
 
-
-
-A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
+The dataset is preprocessed, with all images resized and normalized and it is publicly available on Kaggle and intended for educational and research purposes. As mentioned before, this dataset does not cover dynamic gestures which would be crucial to complete the ASL interpretation in full.
 
 ## MODEL 
 A summary of the model you’re using and why you chose it. 
