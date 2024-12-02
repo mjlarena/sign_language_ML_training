@@ -11,7 +11,10 @@ https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 
 ![Screenshot](amer_sign2.png)
 
-The dataset consists of 
+The dataset consists of 27,455 cases in the training data and 7,172 cases in the test data. 
+
+
+
 A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
 
 ## MODEL 
