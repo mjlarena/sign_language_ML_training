@@ -1,43 +1,59 @@
-# Datasheet Template
+# Datasheet
 
-As far as you can, complete the model datasheet. If you have got the data from the internet, you may not have all the information you need, but make sure you include all the information you do have. 
+URL: https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 
 ## Motivation
 
-- For what purpose was the dataset created? 
-- Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)? Who funded the creation of the dataset?
-
+The dataset was created to enable machine learning research and applications for recognizing American Sign Language (ASL) gestures represented by letters (A-Z). It can serve as a training and evaluation benchmark for computer vision models on gesture recognition tasks.
+  
+The dataset was uploaded to Kaggle by a profile named Tecperson, but it is not clear who that person is. The original MNIST dataset framework it draws inspiration from was funded by various academic and research initiatives, but the funding and specific creators of this dataset are unclear from the provided details.
  
 ## Composition
 
-- What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)? 
-- How many instances of each type are there? 
-- Is there any missing data?
-- Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by    doctor–patient confidentiality, data that includes the content of individuals’ non-public communications)?
+The instances represent grayscale images of hand gestures corresponding to the 24 letters of the ASL alphabet (excluding J and Z due to their dynamic movements). The information is in two CSV files.
+
+It contains the following information:
+- Training set: 27,455 images.
+- Testing set: 7,172 images.
+
+Each image is a 28x28 pixel grayscale representation of a hand gesture and there is no indication of missing data in the dataset. The dataset does not include confidential data. The images are cropped, grayscale representations of hand gestures, with no identifiable personal or sensitive information.
+
 
 ## Collection process
 
-- How was the data acquired? 
-- If the data is a sample of a larger subset, what was the sampling strategy? 
-- Over what time frame was the data collected?
+The original dataset comprised 1,704 color images of hand gestures from multiple users performing gestures against various backgrounds. These images were processed and greatly extended using an automated pipeline to create over 34,000 images. The process included cropping to the hands-only region, gray-scaling, resizing, and applying a variety of augmentation techniques to expand the dataset.
+
 
 ## Preprocessing/cleaning/labelling
 
-- Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section. 
-- Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)? 
+The dataset available at Kaggle had already been significantly preprocessed and, for this task, no further preprocessing was needed. When reviewing the preprocessing that was already performed on the data, we can see the following:
+- Cropping images to focus on the hands-only region.
+- Converting to grayscale.
+- Resizing to 28x28 pixels.
+Applying augmentations such as:
+- Filters ('Mitchell', 'Robidoux', 'Catrom', 'Spline', 'Hermite').
+- 5% random pixelation.
+- ±15% brightness/contrast adjustments.
+- 3 degrees rotations.
+
+These techniques increased the dataset size and improved its variability for model training.
+
  
 ## Uses
 
-- What other tasks could the dataset be used for? 
-- Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms? 
-- Are there tasks for which the dataset should not be used? If so, please provide a description.
+The dataset can be used for tasks such as:
+- Gesture recognition model training and evaluation.
+- Implementation of ASL recognition tasks (not including dynamic gestures).
+
+Since the dataset does not include dynamic gestures (like "J" or "Z"), it may not generalize well to real-life ASL interpretation without additional datasets. The dataset should not be used as a standalone benchmark for dynamic gesture recognition or full ASL interpretation, as it only includes static gestures for 24 letters.
+
 
 ## Distribution
 
-- How has the dataset already been distributed? 
-- Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?  
+The dataset is publicly available on Kaggle and can be downloaded by anyone with a Kaggle account. The dataset is hosted under Kaggle's terms of service, which permits its use for research and educational purposes. The license for the dataset is CC0: Public Domain.
+
 
 ## Maintenance
 
-- Who maintains the dataset?
+The dataset is hosted and maintained on Kaggle by Tecperson. Further maintenance or updates are unclear, but it was updated in 2017 (7 years ago) as stated on Kaggle's site.
 
