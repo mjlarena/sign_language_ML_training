@@ -30,6 +30,7 @@ The dataset available at Kaggle had already been significantly preprocessed and,
 - Cropping images to focus on the hands-only region.
 - Converting to grayscale.
 - Resizing to 28x28 pixels.
+  
 Applying augmentations such as:
 - Filters ('Mitchell', 'Robidoux', 'Catrom', 'Spline', 'Hermite').
 - 5% random pixelation.
